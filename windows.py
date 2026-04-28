@@ -62,7 +62,6 @@ def main():
 
     ensure_dirs()
 
-    # Запоминаем, первый ли это запуск, до удаления маркера
     is_first_run = FIRST_RUN_MARKER.exists()
 
     _config = load_config()
@@ -81,7 +80,6 @@ def main():
             except Exception:
                 pass
 
-        # Бесконечный цикл, пока не нажмем Ctrl+C в консоли
         while not _exiting:
             time.sleep(1)
 
