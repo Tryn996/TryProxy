@@ -1,7 +1,3 @@
-"""
-Общие значения по умолчанию для tray-приложений (Windows / Linux / macOS).
-Единственное отличие по платформе — ключ autostart только на Windows.
-"""
 from __future__ import annotations
 
 import sys
